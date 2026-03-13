@@ -13,10 +13,8 @@ int main()
         for (int i = 2; i * i <= a; i++) {
             if (a % i == 0) {
                 isPrime = 0;
-            } else {
-                isPrime = 1;
+                break;
             }
-            break;
         }
     }
 
@@ -25,7 +23,6 @@ int main()
     } else {
         printf("false\n");
     }
-    
+
     return 0;
 }
-
